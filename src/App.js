@@ -1,6 +1,6 @@
 import './App.css';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import {Movielist} from './components/Movielist';
+import {MovieList} from './components/MovieList';
 
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
       <Router>
           <div> 
               <Switch>
-                  <Route exact path='/' component={Movielist} /> 
+                  <Route exact path='/' component={MovieList} /> 
               </Switch>
           </div>
       </Router>

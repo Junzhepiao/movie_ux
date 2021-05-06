@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Nominatelist = () => {
+export const NominateList = () => {
     return (
         <div>
         <h1> Nominated List</h1>
