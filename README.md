@@ -3,11 +3,8 @@
 
 # Movie_UX 
 
-Movie_UX is a simple single web application that uses React.js to implement
-- search movie data from OMDB API.
-- add movie to my list.
-- remove movie from my list.
-- display message when list full.
+Movie_UX is a simple single web application that uses React.js to implement. 
+User can search movies by movie title and add/remove any movies to Nominate List.
 
 ## Technical requirements
 
