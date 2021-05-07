@@ -56,8 +56,7 @@ Personal API key stored in .env.local, if need to change personal API key, use t
 - install all packages and libraries to project.
 
 [x] Project accesses OMDB API to fetch movie data
-- get personal OMDB API key.
-- create env.local file to store personal API key.
+- hard coded personal OMDB API key.
 - fetch movie data from API.
 
 [x] Update search terms updates result list.
@@ -96,3 +95,8 @@ Personal API key stored in .env.local, if need to change personal API key, use t
 - find a free host.
 - find a free domain.
 - find a tool to monitor website, get intant feedbacks.
+
+## Errors had during the project
+1. styling issue, 
+2. use https in fetch api since deploy host only support secure URL.
+
