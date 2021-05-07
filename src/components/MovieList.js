@@ -9,9 +9,8 @@ export const MovieList = () => {
     const onChange = (e) => {
         e.preventDefault(); //cancel default event behavior
         setQuery(e.target.value);
-        //fetch movie data from the OMDB API with personal key from env.local 
-        //feel free to change to your own api key
-        fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=${process.env.REACT_APP_OMDB_KEY}&s=${e.target.value}`
+
+        fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=1099d135&s=${e.target.value}`
         ).then((res) => res.json())
         .then((data) => {
             console.log(data.Search);
