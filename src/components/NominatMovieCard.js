@@ -1,6 +1,10 @@
-import React  from "react";
+import React, { useContext } from 'react';
+import { GlobalContext } from '../context/GlobalState';
 
 export const NominatMovieCard = ({movie}) => {
+    //access to remove movie action
+    const { removeMovieFromNominatelist } = useContext(GlobalContext);
+
     return (
         <div className="nominate-movie-card">
             <div className="movie-poster">
@@ -21,6 +25,7 @@ export const NominatMovieCard = ({movie}) => {
                     <button 
                         className="button-add" 
                         key={movie.imdbID} 
+                        onClick={() => removeMovieFromNominatelist(movie.imdbID)}
                     >
                         REMOVE
                     </button>

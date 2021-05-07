@@ -24,9 +24,17 @@ export const GlobalProvider = (props) => {
     const addMovieToNominatelist = (movie) => {
         dispatch({ type: "ADD_MOVIE_TO_NOMINATELIST", payload: movie });
     };
+    const removeMovieFromNominatelist = (imdbID) => {
+        dispatch({ type: "REMOVE_MOVIE_FROM_NOMINATELIST", payload: imdbID })
+    };
 
     return (
-        <GlobalContext.Provider value={{nominatelist: state.nominatelist, addMovieToNominatelist}}>
+        <GlobalContext.Provider 
+            value={{
+                nominatelist: state.nominatelist, 
+                addMovieToNominatelist, 
+                removeMovieFromNominatelist}}>
+
             {props.children}
         </GlobalContext.Provider>
     )

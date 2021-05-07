@@ -78,6 +78,10 @@ Personal API key stored in .env.local, if need to change personal API key, use t
 - each movie in the nominate list has remove button.
 - when no movie in the list, show message that the list is empty add a movie.
 
+[x] implement remove button
+- click remove button removes that movie from the list
+- if no movies in the list a message shows list is empty
+- after a movie removed, that movie's add button in the seach list avaliable again
 
 [] Display mssage when the user has 5 nominations.
 

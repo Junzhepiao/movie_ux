@@ -20,7 +20,7 @@ export const NominateList = () => {
                     ))}
                 </div>
             ) : (
-                <h3> No movies added yet, add a movie!</h3>
+                <h3> Your list is empty, add a movie!</h3>
             )}
 
         </div>

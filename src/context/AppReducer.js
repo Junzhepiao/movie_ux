@@ -5,6 +5,13 @@ export default (state, action) => {
                 ...state,
                 nominatelist: [action.payload, ...state.nominatelist],
             }
+        case "REMOVE_MOVIE_FROM_NOMINATELIST":
+            return {
+                ...state,
+                nominatelist: state.nominatelist.filter(
+                    (movie) => movie.imdbID !== action.payload
+                ),
+            };
         default:
             return state;
     }
