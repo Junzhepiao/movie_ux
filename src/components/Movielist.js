@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {MovieCard} from './MovieCard';
+import { MovieCard } from './MovieCard';
 
 export const MovieList = () => {
 
@@ -29,15 +29,17 @@ export const MovieList = () => {
                 <div className="search-bar">
                     <input type="text" placeholder="Search for a movie" value={query} onChange={onChange} />
                 </div>
-                {results && results.length > 0 && (
-                    <ul className="movie-search-results">
-                        {results.map((movie) => (
-                        <li key={movie.imdbID}>
-                            <MovieCard movie={movie} />
-                        </li>
-                        ))}
-                    </ul>
-                )}
+                <div className="movie-list">
+                    {results && results.length > 0 && (
+                        <div className="movie-search-results">
+                            {results.map((movie) => (
+                            <div key={movie.imdbID}>
+                                <MovieCard movie={movie} />
+                            </div>
+                            ))}
+                        </div>
+                    )}
+                </div>
         </div>
     );
 };

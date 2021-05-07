@@ -1,26 +1,16 @@
-import React, { useState, useCallback, useContext } from 'react';
-import { GlobalContext } from '../context/GlobalState';
+import React  from "react";
 
-export const MovieCard = ({movie}) => {
-    //access to add movie action
-    const {addMovieToNominatelist, nominatelist} = useContext(GlobalContext);
-
-    //check movie is already in the nominate list 
-    let storedMovie = nominatelist.find(m => m.imdbID === movie.imdbID);
-
-    //decide to disable movie button if movie already added
-    const nominatelistDisabled = storedMovie ? true : false;
-
+export const NominatMovieCard = ({movie}) => {
     return (
-        <div className="movie-card">
+        <div className="nominate-movie-card">
             <div className="movie-poster">
                 {movie.Poster ? (
                     <img src={`${movie.Poster}`} alt={`${movie.Title} Poster`} width="150" height="200"/>
-                ) : (
+                    ) : (
                     <div className="blank-poster">
                         <img src={``} alt={`${movie.Title} Poster`} width="150" height="200"/>
                     </div>
-                )}
+                    )}
             </div>
             <div className="movie-info">
                 <div className="movie-header">
@@ -31,12 +21,11 @@ export const MovieCard = ({movie}) => {
                     <button 
                         className="button-add" 
                         key={movie.imdbID} 
-                        disabled={nominatelistDisabled}
-                        onClick={() => addMovieToNominatelist(movie)}>
-                        ADD
+                    >
+                        REMOVE
                     </button>
                 </div>
-
+    
             </div>
         </div>
     )

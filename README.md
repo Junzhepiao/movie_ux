@@ -43,7 +43,9 @@ You will also see any lint errors in the console.
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
+### `change personal API key`
 
+Personal API key stored in .env.local, if need to change personal API key, use this .env.local file.
 
 # Project/Task Plan:
 
@@ -72,10 +74,15 @@ It correctly bundles React in production mode and optimizes the build for the be
 - avoid same movie been added twuice(disable add button after being added).
 
 
-[] display added movies in nominate list.
+[x] display added movies in nominate list.
+- each movie in the nominate list has remove button.
+- when no movie in the list, show message that the list is empty add a movie.
+
 
 [] Display mssage when the user has 5 nominations.
+
 [] Styling 
+
 [] Deploy project to online
 - find a free host.
 - find a free domain.

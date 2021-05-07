@@ -1,6 +1,6 @@
 // Store application data in global to let react componenets has 
 // access to the stored data
-import React, {createContext, useReducer, useEffect} from 'react';
+import React, { createContext, useReducer, useEffect } from 'react';
 import AppReducer from "./AppReducer";
 
 // Initial state - now grabs data from local storage, so the list saves after user leaves.
