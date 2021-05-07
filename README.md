@@ -92,7 +92,7 @@ Personal API key stored in .env.local, if need to change personal API key, use t
 - search list and nominate list shows side by side
 - styled add, remove button
 
-[] Deploy project to online
+[x] Deploy project to online
 - find a free host.
 - find a free domain.
 - find a tool to monitor website, get intant feedbacks.
