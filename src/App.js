@@ -1,19 +1,18 @@
 import './App.css';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import {MovieList} from './components/MovieList';
+import {GlobalProvider} from './context/GlobalState';
 
 
 function App() {
   return (
-<div>
+    <GlobalProvider>
       <Router>
-          <div> 
-              <Switch>
-                  <Route exact path='/' component={MovieList} /> 
-              </Switch>
-          </div>
+        <Switch>
+          <Route exact path='/' component={MovieList} /> 
+        </Switch>
       </Router>
-      </div>
+    </GlobalProvider>
   );
 }
 
