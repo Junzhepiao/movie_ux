@@ -27,6 +27,8 @@ Movie_UX is a simple single web application that uses React.js to implement
 
 [] Save nomination lists if the user leaves the page.
 
+## How to run program
+
 ### `git clone & npm install`
 
 Clone project to local machine and run 'npm intall' to install related libraries and packages.
