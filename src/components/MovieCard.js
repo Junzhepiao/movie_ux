@@ -32,7 +32,7 @@ export const MovieCard = ({movie}) => {
                         className="button-add" 
                         key={movie.imdbID} 
                         disabled={nominatelistDisabled}
-                        onClick={() => addMovieToNominatelist(movie)}>
+                        onClick={() => nominatelist.length >= 5 ? alert("Your list already has 5 movies, remove some!") : addMovieToNominatelist(movie)}>
                         ADD
                     </button>
                 </div>
