@@ -14,7 +14,7 @@ export const NominateList = () => {
             {nominatelist.length > 0 ? (
                 <div className="nominated-movie">
                     {nominatelist.map((movie) => (
-                        <div className="nominate-movie-card" key={movie.imdbID}>
+                        <div className="nominate-movie-card-list" key={movie.imdbID}>
                         <NominatMovieCard movie={movie} />
                         </div>
                     ))}

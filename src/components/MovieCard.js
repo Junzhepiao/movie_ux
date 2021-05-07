@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { GlobalContext } from '../context/GlobalState';
+import noImg from '../no-image.png';
 
 export const MovieCard = ({movie}) => {
     //access to add movie action
@@ -14,12 +15,12 @@ export const MovieCard = ({movie}) => {
     return (
         <div className="movie-card">
             <div className="movie-poster">
-                {movie.Poster ? (
-                    <img src={`${movie.Poster}`} alt={`${movie.Title} Poster`} width="150" height="200"/>
-                ) : (
-                    <div className="blank-poster">
-                        <img src={``} alt={`${movie.Title} Poster`} width="150" height="200"/>
+                {movie.Poster === "N/A" ? (
+                    <div className="no-image">
+                    <img src={noImg} alt={`NO IMG`} width="150" height="200"/>
                     </div>
+                ) : (
+                    <img src={`${movie.Poster}`} alt={`${movie.Title} Poster`} width="150" height="200"/>
                 )}
             </div>
             <div className="movie-info">

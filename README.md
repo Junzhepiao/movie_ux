@@ -88,7 +88,9 @@ Personal API key stored in .env.local, if need to change personal API key, use t
 - after reach 5 movies and try to add more, show message that list already full.
 
 
-[] Styling 
+[x] Styling 
+- search list and nominate list shows side by side
+- styled add, remove button
 
 [] Deploy project to online
 - find a free host.

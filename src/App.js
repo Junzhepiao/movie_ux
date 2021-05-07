@@ -11,8 +11,14 @@ function App() {
       <Router>
         <Switch>
           <Route exact path='/'>
-            <MovieList />
-            <NominateList />
+            <div className="flex-container">
+              <div className="app-movie-list">
+                <MovieList />
+              </div>
+              <div className="app-nominate-list">
+                <NominateList />
+              </div>
+          </div>
           </Route> 
         </Switch>
       </Router>
