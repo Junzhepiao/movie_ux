@@ -1,4 +1,5 @@
-### Video demo:
+### Video demo: https://youtu.be/93V4qBh2oxw
+### live application: http://movie-ux.herokuapp.com/
 
 
 # Movie_UX 
@@ -14,15 +15,15 @@ User can search movies by movie title and add/remove any movies to Nominate List
 
 [x] Update search terms updates result list.
 
-[] Each movie from the search list can be added and removed from the nomination list.
+[x] Each movie from the search list can be added and removed from the nomination list.
 
 [x] Disable the button if that movie already in the nominate list.
 
-[] Display mssage when the user has 5 nominations.
+[x] Display mssage when the user has 5 nominations.
 
 ## Extras requirements
 
-[] Save nomination lists if the user leaves the page.
+[x] Save nomination lists if the user leaves the page.
 
 ## How to run program
 
@@ -42,10 +43,6 @@ You will also see any lint errors in the console.
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
-
-### `change personal API key`
-
-Personal API key stored in .env.local, if need to change personal API key, use this .env.local file.
 
 # Project/Task Plan:
 
@@ -70,8 +67,7 @@ Personal API key stored in .env.local, if need to change personal API key, use t
 - use a global storeage to store movie data for share data with react components.
 - use local storage to store data avoid data lose after refresh the webpage/user leaves website.
 - nominate list has accesses to movie data that stored.
-- avoid same movie been added twuice(disable add button after being added).
-
+- avoid same movie been added twice(disable add button after being added).
 
 [x] display added movies in nominate list.
 - each movie in the nominate list has remove button.
@@ -86,7 +82,6 @@ Personal API key stored in .env.local, if need to change personal API key, use t
 - when 5 movies in the list, can not add more movies.
 - after reach 5 movies and try to add more, show message that list already full.
 
-
 [x] Styling 
 - search list and nominate list shows side by side
 - styled add, remove button
@@ -100,3 +95,12 @@ Personal API key stored in .env.local, if need to change personal API key, use t
 1. styling issue, 
 2. use https in fetch api since deploy host only support secure URL.
 
+## Furthuer updates
+- add more styling.
+- multi device friendly.
+- animation with button.
+- menu bar for more pages.
+
+## Other resources about me!!
+- webpage: https://salty-plateau-66836.herokuapp.com/
+- youtube: https://www.youtube.com/channel/UCqcV1s_Wo0XHUSpIdX29UDQ
