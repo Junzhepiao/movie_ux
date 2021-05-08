@@ -45,51 +45,51 @@ Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 # Project/Task Plan:
-
+ 
 [x] Set up React and create Development environment
 - set up react, node.js, javascript to local machine.
 - build a starter react app for start.
-- create git hub repo to upload.
+- create github repo to upload.
 - install all packages and libraries to project.
-
+ 
 [x] Project accesses OMDB API to fetch movie data
 - hard coded personal OMDB API key.
 - fetch movie data from API.
-
+ 
 [x] Update search terms updates result list.
-- create search bar component in the React project and able to search movie.
-- create movie list component in the project to display movies.
-- consider boundary cases, movie data with out poster, year, too many movie result.
-- each movie in the movie list has a add button.
-
+- create a search bar component in the React project and be able to search movies.
+- create a movie list component in the project to display movies.
+- consider boundary cases, movie data without poster, year, too many movie results.
+- each movie in the movie list has an add button.
+ 
 [x] Add a movie to the nominate list
 - create a nominate list component.
-- use a global storeage to store movie data for share data with react components.
-- use local storage to store data avoid data lose after refresh the webpage/user leaves website.
-- nominate list has accesses to movie data that stored.
-- avoid same movie been added twice(disable add button after being added).
-
-[x] display added movies in nominate list.
-- each movie in the nominate list has remove button.
-- when no movie in the list, show message that the list is empty add a movie.
-
+- use a global storage to store movie data for sharing data with react components.
+- use local storage to store data, avoid data loss after refresh the webpage/user leaves the website.
+- nominate list has access to movie data that is stored.
+- avoid the same movie being added twice(disable add button after being added).
+ 
+[x] display added movies in the nominate list.
+- each movie in the nominate list has a remove button.
+- when no movie is in the list, show a message that the list is empty add a movie.
+ 
 [x] implement remove button
-- click remove button removes that movie from the list.
-- if no movies in the list a message shows list is empty.
-- after a movie removed, that movie's add button in the seach list avaliable again.
-
+- clicking the remove button removes that movie from the list.
+- if there are no movies in the list a message shows the list is empty.
+- after a movie is removed, that movie's add button in the search list available again.
+ 
 [x] Limit 5 movies in the nominate list.
-- when 5 movies in the list, can not add more movies.
-- after reach 5 movies and try to add more, show message that list already full.
-
-[x] Styling 
+- when 5 movies are in the list, I can not add more movies.
+- after reaching 5 movies and trying to add more, show a message that the list is already full.
+ 
+[x] Styling
 - search list and nominate list shows side by side
 - styled add, remove button
-
+ 
 [x] Deploy project to online
 - find a free host.
 - find a free domain.
-- find a tool to monitor website, get intant feedbacks.
+- find a tool to monitor website, get instant feedback.
 
 ## Errors had during the project
 1. styling issue, 
